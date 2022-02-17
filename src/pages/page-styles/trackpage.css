@@ -1,0 +1,12 @@
+.track_cartitem {
+  /* display: grid;
+  grid-template-columns: 4fr 8fr 1fr 5fr 2fr;
+  padding: 1rem;
+  grid-gap: 65px;
+  gap: 88px; */
+  width: 100%;
+  place-items: center;
+  margin-bottom: 35px;
+  background: white;
+  border-radius: 4px;
+}

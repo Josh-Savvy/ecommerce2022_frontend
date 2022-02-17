@@ -1,0 +1,32 @@
+.homepage {
+  max-width: 1300px;
+  padding-left: 70px;
+  margin-top: 20px;
+  overflow-x: hidden;
+}
+.homepage_title {
+  font-size: 1.5rem;
+  margin: 0 0 8px 1rem;
+  font-weight: 600;
+}
+.homepage_products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* padding:100px; */
+}
+@media (max-width: 1232px) {
+  .homepage_products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 950px) {
+  .homepage_products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 630px) {
+  .homepage_products {
+    grid-template-columns: 1fr;
+  }
+}

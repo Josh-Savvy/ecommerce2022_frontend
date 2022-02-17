@@ -1,0 +1,30 @@
+.searchbar {
+  /* margin: 5px 0 40px 0; */
+  /* width: 800px; */
+  /* display: flex; */
+}
+.searchbar input {
+  padding: 5px;
+  width: 70%;
+  border-radius: 2px;
+  opacity: 95%;
+}
+.searchbar input:hover {
+  transition: all ease-in-out 0.3s;
+}
+.searchbar input:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+.searchbar button {
+  border-radius: 0 !important;
+  padding: 6.3px 10px;
+  color: #fff;
+  background: goldenrod;
+  border: none;
+}
+@media (max-width: 960px) {
+  .searchbar {
+    display: none;
+  }
+}
