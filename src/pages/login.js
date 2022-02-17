@@ -6,8 +6,8 @@ import { authenticate, isAuth } from "../helpers/auth";
 const Login = () => {
   const history = useHistory();
   const [state, setState] = useState({
-    email: "admin@admin.admin",
-    password: "pa$$word",
+    email: "",
+    password: "",
     error: "",
     success: "",
     buttonText: "Login",
