@@ -1,14 +1,11 @@
 import "./page-styles/homepage.css";
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-// import { Link } from "react-router-dom";
-// Import actions
 import { getProducts as listProducts } from "../redux/actions/productAction";
 
 // import Product Component
 import Product from "../components/Product";
 import { isAuth, removeCookie } from "../helpers/auth";
-// import axios from "axios";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -25,9 +22,7 @@ const HomePage = () => {
       window.location = window.location.href + "?r";
     }
   }
-
   setTimeout(reloadIt(), 1000);
-
   return (
     <div className="homepage fade-in">
       <h2 className="homepage_title">Latest Products</h2>

@@ -4,10 +4,12 @@
   /* display: flex; */
 }
 .searchbar input {
-  padding: 5px;
+  padding: 6px;
+  outline: none;
+  border: none;
   width: 70%;
   border-radius: 2px;
-  opacity: 95%;
+  /* opacity: 95%; */
 }
 .searchbar input:hover {
   transition: all ease-in-out 0.3s;

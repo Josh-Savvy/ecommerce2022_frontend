@@ -71,8 +71,8 @@ const Sidebar = ({ show, click }) => {
             className=""
           >
             <i className="fa fa-shopping-cart m-2"></i>
-            Cart
-            <span className="cart_counter">{cartCounter()}</span>
+            My Cart
+            {/* <span className="cart_counter">{cartCounter()}</span> */}
           </Link>
         </li>
 
