@@ -170,7 +170,7 @@ const Login = () => {
           <h4 className="text-center">Create account</h4>
           <br />
           {error && <div className="alert alert-danger">{error}</div>}
-          {success && <div className="alert alert-success">{success}</div>}
+          {success && <div className="alert bg-green text-light">{success}</div>}
           {register()}
         </div>
       </div>

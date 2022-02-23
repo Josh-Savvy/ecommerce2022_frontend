@@ -12,6 +12,7 @@ import TrackOrders from "./pages/track";
 import TrackOrderById from "./pages/track/trackId";
 import SignUp from "./pages/register";
 import User from "./pages/user";
+import RegisterActivate from "./pages/auth/activate/[id]";
 
 const App = () => {
   const [sidebarToggle, setSidebarToggle] = useState(false);
@@ -45,6 +46,7 @@ const App = () => {
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/user" component={User} />
+            <Route exact path="/auth/activate/:id" component={RegisterActivate} />
           </Switch>
         </main>
       </Router>
