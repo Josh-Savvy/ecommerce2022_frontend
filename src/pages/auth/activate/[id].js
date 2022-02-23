@@ -25,8 +25,11 @@ const RegisterActivate = () => {
     e.preventDefault();
     setState({ ...state, buttonText: "Activating..." });
     try {
-      //   const response = await axios.post(`${process.env.BACKEND_API}/register/activate`, { token });
-      const response = await axios.post(`/api/register/activate`, { token });
+      const response = await axios.post(
+        `${process.env.CLIENT_URL}/register/activate`,
+        { token }
+      );
+      // const response = await axios.post(`/api/register/activate`, { token });
       setState({
         ...state,
         name: "",
