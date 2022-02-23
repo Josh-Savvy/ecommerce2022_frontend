@@ -26,7 +26,7 @@ const RegisterActivate = () => {
     setState({ ...state, buttonText: "Activating..." });
     try {
       const response = await axios.post(
-        `${process.env.CLIENT_URL}/register/activate`,
+        `/register/activate`,
         { token }
       );
       // const response = await axios.post(`/api/register/activate`, { token });
