@@ -1,4 +1,4 @@
-import "./page-styles/productpage.css";
+import "./styles/productpage.css";
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import withUser from "./withUser";

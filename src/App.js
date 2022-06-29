@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "antd/dist/antd.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomePage from "./pages/homepage";
+import HomePage from "./pages";
 import ProductPage from "./pages/productpage";
 import CartPage from "./pages/cartpage";
 import Navbar from "./components/Navbar";
@@ -46,7 +47,11 @@ const App = () => {
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/user" component={User} />
-            <Route exact path="/auth/activate/:id" component={RegisterActivate} />
+            <Route
+              exact
+              path="/auth/activate/:id"
+              component={RegisterActivate}
+            />
           </Switch>
         </main>
       </Router>

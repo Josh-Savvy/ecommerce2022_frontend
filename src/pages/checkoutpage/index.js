@@ -1,4 +1,4 @@
-import "../page-styles/checkout.css";
+import "../styles/checkout.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import CartItem from "../../components/CartItem";

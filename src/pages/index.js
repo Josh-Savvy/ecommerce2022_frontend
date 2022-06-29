@@ -1,4 +1,4 @@
-import "./page-styles/homepage.css";
+import "./styles/homepage.css";
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getProducts as listProducts } from "../redux/actions/productAction";
